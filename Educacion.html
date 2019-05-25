@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<svg width="2000" height="250">
+		<style>
+		textarea { vertical-align: top; }
+		</style>
 		<image xlink:href= "imagenes\icon.svg">
 		</svg>
 		<br>
@@ -32,7 +35,9 @@
 			<BR>
 			<div style="background-color:black;color:white;padding:15px;">
 				<a href="Curriculum.html" target="_blank">
-				<h2>Curriculum</h2> </a> <a href="Experiencia.html" target="_blank"> <h2>Experiencia</h2> </a>
+				<h2>Inicio</h2> </a>
+				<a href="Experiencia.html" target="_blank">
+				<h2>Experiencia</h2> </a>
 			</div>
 		<BR>
 		<H2>EDUCACION</H2>
@@ -62,19 +67,31 @@
 		</tbody>
 	  </table>
 	  <br>
-	  Agregar estudios
-	  <p>
-			<label for="recomendado">Año: </label>
+	  <h2> Agregar estudios</h2>	  
+	   <form autocomplete="on" name="Registro">
+			<label for="recomendado"><strong>Año:</label>
 					<select name="recomendado">
 						<option value="1">2004</option>
+						<option value="1">2005</option>
 						<option value="1">2006</option>
+						<option value="1">2007</option>
+						<option value="1">2008</option>
+						<option value="1">2009</option>
 						<option value="1">2010</option>
+						<option value="1">2011</option>
 					</select>
-				</p>
-			<label for="edad">Edad</label>
-				<br>
-			<input type="text" name="edad" placeholder="20">
-			
+			<p>
+				<label for="Institucion"><strong>Institucion:</label>
+				<input type="text" name="Institucion" placeholder="Universidad del.." autofocus required>
+			</p>
+			<p>
+				<label for="Lugar"><strong>Lugar:</label>
+				<textarea name="lugar" rows="3" cols="50" vertical-align="top"></textarea>
+			</p>
+			<p>
+				<input type="submit" value="Enviar">
+			</p>
+		</form>
 			<hr>
 			<div style="background-color:black;color:white;padding:15px;">
 				<footer>
@@ -83,7 +100,5 @@
 				El Estor-Izabal
 				</footer>
 			</div>
-		
-   
 	</body>
 </html>
